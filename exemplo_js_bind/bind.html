@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bind</title>
+    <script>
+        function carro(){
+            let velMax=200;
+            console.log(this.modelo);
+        }
+
+        let detalhes={
+            cor: 'Branco',
+            marca: 'VW',
+            modelo: 'Golf'
+        }
+
+        let carroLigarDetalhes = carro.bind(detalhes);
+
+        //carro();
+        carroLigarDetalhes();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
